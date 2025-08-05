@@ -52,7 +52,7 @@ export default function Footer() {
                 <MapPin className="h-5 w-5 text-blue-400 mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">Palm Coast, FL</p>
-                  <p className="text-gray-400 text-sm">Serving Flagler County</p>
+                  <p className="text-gray-400 text-sm">Serving here to here</p>
                 </div>
               </div>
 
