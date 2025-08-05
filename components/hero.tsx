@@ -64,7 +64,7 @@ export default function Hero() {
             <Card className="bg-white/15 backdrop-blur-md border-white/30 p-4 md:p-6 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 w-full max-w-sm md:max-w-md">
               <div className="text-center mb-4">
                 <Image
-                  src="/images/hero.png"
+                  src="/images/herobgremove.jpg"
                   alt="A&L Services LLC - Friendly Shark Mascot with Junk Removal Truck"
                   width={240}
                   height={240}
