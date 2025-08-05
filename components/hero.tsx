@@ -67,72 +67,78 @@ export default function Hero() {
           </div>
 
           {/* Right side - Card with image and services */}
-          <div className="flex items-center justify-center px-4 py-6 md:py-8 lg:py-6">
-            <Card className="bg-white/15 backdrop-blur-md border-white/30 p-4 md:p-6 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 w-full max-w-sm md:max-w-md">
-              <div className="text-center mb-4">
-                <Image
-                  src="/images/herobgremove.jpg"
-                  alt="AE&L Services LLC - Friendly Shark Mascot with Junk Removal Truck"
-                  width={240}
-                  height={240}
-                  className="w-[200px] h-auto mx-auto rounded-xl"
-                  priority
-                />
-              </div>
+         <div className="flex items-center justify-center px-4 py-4 md:py-6 lg:py-8">
+  <Card className="bg-white/15 backdrop-blur-md border-white/30 p-4 md:p-6 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 w-full max-w-sm md:max-w-md">
+    
+    {/* Logo Image */}
+    <div className="text-center mb-3">
+      <Image
+        src="/images/herobgremove.jpg"
+        alt="A&L Services LLC - Friendly Shark Mascot with Junk Removal Truck"
+        width={180}
+        height={180}
+        className="w-[160px] h-auto mx-auto rounded-xl"
+        priority
+      />
+    </div>
 
-              <div className="bg-white/25 backdrop-blur-sm rounded-2xl p-3 border border-white/40">
-                <h3 className="text-gray-100 font-bold text-base md:text-lg text-center mb-3">
-                  Our Services Include:
-                </h3>
-                <div className="grid grid-cols-2 gap-2 text-xs md:text-sm text-white">
-                  <span className="bg-blue-600/60 px-3 py-2 rounded-full text-center font-medium">
-                    Junk Removal
-                  </span>
-                  <span className="bg-blue-600/60 px-3 py-2 rounded-full text-center font-medium">
-                    Demolition
-                  </span>
-                  <span className="bg-blue-600/60 px-3 py-2 rounded-full text-center col-span-2 font-medium">
-                    Estate Cleanouts
-                  </span>
-                  <span className="bg-blue-600/60 px-3 py-2 rounded-full text-center col-span-2 font-medium">
-                    Extreme hoard clean
-                  </span>
-                </div>
-              </div>
+    {/* Services Section */}
+    <div className="bg-white/25 backdrop-blur-sm rounded-2xl p-3 border border-white/40 mb-4">
+      <h3 className="text-gray-100 font-bold text-base md:text-lg text-center mb-3">
+        Our Services Include:
+      </h3>
+      <div className="grid grid-cols-2 gap-2 text-xs md:text-sm text-white">
+        <span className="bg-blue-600/60 px-3 py-1.5 rounded-full text-center font-medium">
+          Junk Removal
+        </span>
+        <span className="bg-blue-600/60 px-3 py-1.5 rounded-full text-center font-medium">
+          Demolition
+        </span>
+        <span className="bg-blue-600/60 px-3 py-1.5 rounded-full text-center col-span-2 font-medium">
+          Estate Cleanouts
+        </span>
+        <span className="bg-blue-600/60 px-3 py-1.5 rounded-full text-center col-span-2 font-medium">
+          Extreme Hoard Clean
+        </span>
+      </div>
+    </div>
 
-              {/* Mobile buttons */}
-              <div className="lg:hidden mt-4 flex flex-col gap-3">
-               <Button
-                  onClick={scrollToContact}
-                  size="lg"
-                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-base px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                > 
-                  Get a Free Quote
-                </Button>
-               <Button
-                  onClick={scrollToContact}
-                  size="lg"
-                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-base px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                > 
-                  Email 
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30 font-bold text-base px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  <a
-                    href="tel:+13866272171"
-                    className="flex items-center justify-center"
-                  >
-                    <Phone className="mr-2 h-4 w-4" />
-                    Call (386) 627-2171
-                  </a>
-                </Button>
-              </div>
-            </Card>
-          </div>
+    {/* Mobile Buttons */}
+    <div className="lg:hidden flex flex-col gap-2">
+      <Button
+        onClick={scrollToContact}
+        size="lg"
+        className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+      >
+        Get a Free Quote
+      </Button>
+
+      <Button
+        onClick={scrollToContact}
+        size="lg"
+        className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+      >
+        Email
+      </Button>
+
+      <Button
+        asChild
+        size="lg"
+        variant="outline"
+        className="bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30 font-bold text-sm px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+      >
+        <a
+          href="tel:+13866272171"
+          className="flex items-center justify-center"
+        >
+          <Phone className="mr-2 h-4 w-4" />
+          Call (386) 627-2171
+        </a>
+      </Button>
+    </div>
+  </Card>
+</div>
+
         </div>
       </div>
 
