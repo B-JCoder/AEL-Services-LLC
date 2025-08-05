@@ -189,7 +189,7 @@ export default function BookingForm() {
               </Button>
 
               <p className="text-center text-sm text-gray-500">
-                By submitting this form, you agree to be contacted by A&L Services LLC regarding your request.
+                By submitting this form, you agree to be contacted by AE&L Services LLC regarding your request.
               </p>
             </form>
           </Card>

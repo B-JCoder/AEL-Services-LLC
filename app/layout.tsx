@@ -118,7 +118,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "A&L Services LLC",
+              name: "AE&L Services LLC",
               description: "Professional junk removal and demolition services in Palm Coast, FL",
               url: "https://www.aelservicesllc.com",
               telephone: "+1-386-627-2171",

@@ -65,7 +65,7 @@ export default function Hero() {
               <div className="text-center mb-4">
                 <Image
                   src="/images/herobgremove.jpg"
-                  alt="A&L Services LLC - Friendly Shark Mascot with Junk Removal Truck"
+                  alt="AE&L Services LLC - Friendly Shark Mascot with Junk Removal Truck"
                   width={240}
                   height={240}
                   className="w-[200px] h-auto mx-auto rounded-xl"
@@ -83,6 +83,9 @@ export default function Hero() {
                   </span>
                   <span className="bg-blue-600/60 px-3 py-2 rounded-full text-center font-medium">
                     Demolition
+                  </span>
+                  <span className="bg-blue-600/60 px-3 py-2 rounded-full text-center col-span-2 font-medium">
+                    Estate Cleanouts
                   </span>
                   <span className="bg-blue-600/60 px-3 py-2 rounded-full text-center col-span-2 font-medium">
                     Estate Cleanouts

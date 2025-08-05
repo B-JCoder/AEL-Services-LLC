@@ -13,14 +13,14 @@ export default function Footer() {
               <div className="w-16 h-16 bg-white rounded-full p-2 mr-4">
                 <Image
                   src="/images/hero.png"
-                  alt="A&L Services LLC Logo"
+                  alt="AE&L Services LLC Logo"
                   width={60}
                   height={60}
                   className="w-full h-full object-contain"
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">A&L Services LLC</h3>
+                <h3 className="text-2xl font-bold">AE&L Services LLC</h3>
                 <p className="text-blue-300">Your Trusted Junk Removal Experts</p>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} A&L Services LLC. All rights reserved.
+              © {new Date().getFullYear()} AE&L Services LLC. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link href="#" className="text-gray-400 hover:text-white transition-colors duration-300">

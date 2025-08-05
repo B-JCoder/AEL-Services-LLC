@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why Choose <span className="text-blue-600">A&L Services?</span>
+            Why Choose <span className="text-blue-600">AE&L Services?</span>
           </h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

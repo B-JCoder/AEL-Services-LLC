@@ -10,7 +10,7 @@ const testimonials = [
   {
     name: "Mike",
     rating: 5,
-    text: "A&L Services demolished our old shed and hauled away all the debris. Fair pricing, quick work, and they even cleaned up better than I expected. Great local business!",
+    text: "AE&L Services demolished our old shed and hauled away all the debris. Fair pricing, quick work, and they even cleaned up better than I expected. Great local business!",
   },
   {
     name: "Jennifer",
