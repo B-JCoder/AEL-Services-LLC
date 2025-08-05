@@ -6,94 +6,94 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.aelservicesllc.com"),
-  title: {
-    default: "A&L Services LLC - Junk Removal & Demolition | Palm Coast, FL",
-    template: "%s | A&L Services LLC",
-  },
-  description:
-    "Professional junk removal and demolition services in Palm Coast, FL. Fast, friendly, family-owned business. Free quotes, same-day service. Call (386) 627-2171 today!",
-  keywords: [
-    "junk removal Palm Coast FL",
-    "demolition services Palm Coast",
-    "estate cleanouts Flagler County",
-    "furniture removal Palm Coast",
-    "construction debris removal",
-    "shed removal Palm Coast",
-    "appliance pickup Florida",
-    "garage cleanout services",
-    "commercial junk removal",
-    "residential cleanouts",
-    "A&L Services LLC",
-    "family owned junk removal",
-  ],
-  authors: [{ name: "A&L Services LLC", url: "https://www.aelservicesllc.com" }],
-  creator: "A&L Services LLC",
-  publisher: "A&L Services LLC",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://www.aelservicesllc.com",
-    siteName: "A&L Services LLC",
-    title: "A&L Services LLC - Professional Junk Removal & Demolition Services",
-    description:
-      "Palm Coast's #1 trusted junk removal service. Family-owned, fast, and reliable. Free quotes available. Call (386) 627-2171 for same-day service!",
-    images: [
-      {
-        url: "/images/hero.png",
-        width: 1200,
-        height: 630,
-        alt: "A&L Services LLC - Junk Removal & Demolition Experts in Palm Coast, FL",
-        type: "image/png",
-      },
-      {
-        url: "/favicon.ico",
-        width: 32,
-        height: 32,
-        alt: "A&L Services LLC Logo",
-        type: "image/x-icon",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@aelservicesllc",
-    creator: "@aelservicesllc",
-    title: "A&L Services LLC - Junk Removal & Demolition | Palm Coast, FL",
-    description:
-      "Professional junk removal and demolition services in Palm Coast, FL. Family-owned business with free quotes and same-day service.",
-    images: ["/images/hero.png"],
-  },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
-  alternates: {
-    canonical: "https://www.aelservicesllc.com",
-  },
-  category: "Business Services",
-  classification: "Junk Removal and Demolition Services",
-  other: {
-    "business:contact_data:street_address": "Palm Coast, FL",
-    "business:contact_data:locality": "Palm Coast",
-    "business:contact_data:region": "Florida",
-    "business:contact_data:postal_code": "32137",
-    "business:contact_data:country_name": "United States",
-    "business:contact_data:phone_number": "+1-386-627-2171",
-    "business:contact_data:email": "aelservicellc@outlook.com",
-  },
+  // metadataBase: new URL("https://www.aelservicesllc.com"),
+  // title: {
+  //   default: "A&L Services LLC - Junk Removal & Demolition | Palm Coast, FL",
+  //   template: "%s | A&L Services LLC",
+  // },
+  // description:
+  //   "Professional junk removal and demolition services in Palm Coast, FL. Fast, friendly, family-owned business. Free quotes, same-day service. Call (386) 627-2171 today!",
+  // keywords: [
+  //   "junk removal Palm Coast FL",
+  //   "demolition services Palm Coast",
+  //   "estate cleanouts Flagler County",
+  //   "furniture removal Palm Coast",
+  //   "construction debris removal",
+  //   "shed removal Palm Coast",
+  //   "appliance pickup Florida",
+  //   "garage cleanout services",
+  //   "commercial junk removal",
+  //   "residential cleanouts",
+  //   "A&L Services LLC",
+  //   "family owned junk removal",
+  // ],
+  // authors: [{ name: "A&L Services LLC", url: "https://www.aelservicesllc.com" }],
+  // creator: "A&L Services LLC",
+  // publisher: "A&L Services LLC",
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  //   googleBot: {
+  //     index: true,
+  //     follow: true,
+  //     "max-video-preview": -1,
+  //     "max-image-preview": "large",
+  //     "max-snippet": -1,
+  //   },
+  // },
+  // openGraph: {
+  //   type: "website",
+  //   locale: "en_US",
+  //   url: "https://www.aelservicesllc.com",
+  //   siteName: "A&L Services LLC",
+  //   title: "A&L Services LLC - Professional Junk Removal & Demolition Services",
+  //   description:
+  //     "Palm Coast's #1 trusted junk removal service. Family-owned, fast, and reliable. Free quotes available. Call (386) 627-2171 for same-day service!",
+  //   images: [
+  //     {
+  //       url: "/images/hero.png",
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "A&L Services LLC - Junk Removal & Demolition Experts in Palm Coast, FL",
+  //       type: "image/png",
+  //     },
+  //     {
+  //       url: "/favicon.ico",
+  //       width: 32,
+  //       height: 32,
+  //       alt: "A&L Services LLC Logo",
+  //       type: "image/x-icon",
+  //     },
+  //   ],
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   site: "@aelservicesllc",
+  //   creator: "@aelservicesllc",
+  //   title: "A&L Services LLC - Junk Removal & Demolition | Palm Coast, FL",
+  //   description:
+  //     "Professional junk removal and demolition services in Palm Coast, FL. Family-owned business with free quotes and same-day service.",
+  //   images: ["/images/hero.png"],
+  // },
+  // verification: {
+  //   google: "your-google-verification-code",
+  //   yandex: "your-yandex-verification-code",
+  //   yahoo: "your-yahoo-verification-code",
+  // },
+  // alternates: {
+  //   canonical: "https://www.aelservicesllc.com",
+  // },
+  // category: "Business Services",
+  // classification: "Junk Removal and Demolition Services",
+  // other: {
+  //   "business:contact_data:street_address": "Palm Coast, FL",
+  //   "business:contact_data:locality": "Palm Coast",
+  //   "business:contact_data:region": "Florida",
+  //   "business:contact_data:postal_code": "32137",
+  //   "business:contact_data:country_name": "United States",
+  //   "business:contact_data:phone_number": "+1-386-627-2171",
+  //   "business:contact_data:email": "aelservicellc@outlook.com",
+  // },
 }
 
 export default function RootLayout({
