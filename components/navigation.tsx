@@ -48,25 +48,26 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button onClick={() => scrollToSection("#home")} className="flex items-center space-x-3 group">
-            <div className="w-14 h-14 bg-white rounded-full p-2 shadow-xl group-hover:scale-105 transition-transform duration-300 border-2 border-white/30">
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full p-1.5 md:p-2 shadow-xl group-hover:scale-105 transition-transform duration-300 border-2 border-white/30">
               <Image
                 src="/images/hero.png"
-                alt="A&L Services LLC"
+                alt="A&L Services LLC Logo"
                 width={56}
                 height={56}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain rounded-full"
+                priority
               />
             </div>
             <div className="hidden sm:block">
               <h1
-                className={`text-xl font-bold transition-colors duration-300 drop-shadow-sm ${
+                className={`text-lg md:text-xl font-bold transition-colors duration-300 drop-shadow-sm ${
                   isScrolled ? "text-gray-900" : "text-white"
                 }`}
               >
                 A&L Services LLC
               </h1>
               <p
-                className={`text-sm transition-colors duration-300 drop-shadow-sm ${
+                className={`text-xs md:text-sm transition-colors duration-300 drop-shadow-sm ${
                   isScrolled ? "text-blue-600" : "text-blue-100"
                 }`}
               >
@@ -98,11 +99,12 @@ export default function Navigation() {
                 isScrolled
                   ? "bg-blue-600 hover:bg-blue-700 text-white"
                   : "bg-yellow-400 hover:bg-yellow-500 text-gray-900"
-              } font-semibold rounded-full px-6 hover:shadow-xl hover:scale-105`}
+              } font-semibold rounded-full px-4 md:px-6 hover:shadow-xl hover:scale-105`}
             >
               <a href="tel:+13866272171" className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                Call Now
+                <span className="hidden md:inline">Call Now</span>
+                <span className="md:hidden">Call</span>
               </a>
             </Button>
 
@@ -140,7 +142,7 @@ export default function Navigation() {
                 >
                   <a href="tel:+13866272171" className="flex items-center justify-center">
                     <Phone className="h-4 w-4 mr-2" />
-                    Call +1 386-627-2171
+                    Call (386) 627-2171
                   </a>
                 </Button>
               </div>

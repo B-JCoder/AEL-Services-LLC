@@ -75,5 +75,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-JCoder/AEL-Services-LLC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/B-JCoder/AEL-Services-LLC/issues"
+  },
+  "homepage": "https://github.com/B-JCoder/AEL-Services-LLC#readme",
   "description": ""
 }

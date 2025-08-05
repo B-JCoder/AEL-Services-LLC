@@ -12,31 +12,23 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import Navigation from "@/components/navigation"
 
 export const metadata: Metadata = {
-  title: "Junk Removal & Demolition - A&L Services LLC | Palm Coast, FL",
-  description: "Fast, friendly junk removal and demolition services in Palm Coast, FL. Call for a free quote today!",
-  keywords: "junk removal, demolition, Palm Coast, shed removal, cleanouts, estate cleanouts, Florida junk pickup",
-  authors: [{ name: "A&L Services LLC" }],
+  title: "Professional Junk Removal & Demolition Services | A&L Services LLC",
+  description:
+    "Fast, reliable junk removal and demolition services in Palm Coast, FL. Family-owned business with free estimates. Same-day service available. Call (386) 627-2171!",
+  keywords:
+    "junk removal Palm Coast, demolition services Florida, estate cleanouts, furniture removal, construction debris, shed removal, appliance pickup",
   openGraph: {
-    title: "A&L Services LLC - Junk Removal & Demolition Experts",
-    description: "Palm Coast's #1 trusted junk removal service. Call now for a free quote!",
-    url: "https://www.aelservicesllc.com",
-    siteName: "A&L Services LLC",
+    title: "A&L Services LLC - Palm Coast's #1 Junk Removal Service",
+    description:
+      "Professional junk removal and demolition services. Family-owned, fast, and reliable. Free quotes available!",
     images: [
       {
         url: "/images/hero.png",
         width: 1200,
         height: 630,
-        alt: "A&L Services LLC - Junk Removal & Demolition",
+        alt: "A&L Services LLC Junk Removal Truck with Shark Mascot",
       },
     ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "A&L Services LLC - Junk Removal & Demolition Experts",
-    description: "Palm Coast's #1 trusted junk removal service. Call now for a free quote!",
-    images: ["/images/hero.png"],
   },
 }
 
