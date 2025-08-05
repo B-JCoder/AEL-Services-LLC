@@ -1,3 +1,4 @@
+"use client"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Home, Building2, Hammer, Truck } from "lucide-react"
