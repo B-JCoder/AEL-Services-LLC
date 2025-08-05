@@ -43,6 +43,13 @@ export default function Hero() {
                 Get a Free Quote
               </Button>
               <Button
+                onClick={scrollToContact}
+                size="lg"
+                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                Email Us
+              </Button>
+              <Button
                 asChild
                 size="lg"
                 variant="outline"
@@ -107,7 +114,7 @@ export default function Hero() {
                   size="lg"
                   className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-base px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 > 
-                  Email Us
+                  Email 
                 </Button>
                 <Button
                   asChild

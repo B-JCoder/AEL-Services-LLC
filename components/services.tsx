@@ -4,31 +4,44 @@ import { Home, Building2, Hammer, Truck } from "lucide-react"
 
 const services = [
   {
+    icon: Truck,
+    title: "Specialty",
+    description: "Unique and challenging removals",
+    items: [
+      "Estate Cleanouts",
+      "Hoarder Home Cleanouts with Care",
+      "Real Estate / Foreclosure Cleanouts",
+      "Storm Debris Cleanup",
+      "Appliance and Scrap Metal Pickup",
+    ],
+    color: "bg-purple-500",
+  },
+  {
     icon: Home,
     title: "Residential",
-    description: "Complete home cleanouts and junk removal",
+    description: "Efficient home junk removal services",
     items: [
-      "Furniture Removal",
-      "Appliance Pickup",
-      "Yard Waste Cleanup",
-      "Estate Cleanouts",
+      "Household Clutter Removal",
       "Garage Cleanouts",
-      "Basement Clearing",
-      "Extreme hoard clean",
+      "Attic and Basement Cleanouts",
+      "Furniture Removal",
+      "Appliance Removal (Fridges, Washers, etc.)",
+      "Yard Debris Removal (Branches, Leaves, etc.)",
+      "Hot Tub and Shed Demolition/Removal",
+      "Mattress and Box Spring Disposal",
     ],
     color: "bg-blue-500",
   },
   {
     icon: Building2,
     title: "Commercial",
-    description: "Professional business waste solutions",
+    description: "Professional business junk removal",
     items: [
       "Office Cleanouts",
-      "Retail Space Clearing",
-      "Construction Debris",
-      "Warehouse Cleanup",
-      "Restaurant Equipment",
-      "Medical Equipment",
+      "Construction Site Cleanup",
+      "Property Management Cleanouts (Apartments, Evictions, etc.)",
+      "Retail Space Junk Removal",
+      "Storage Unit Cleanouts",
     ],
     color: "bg-green-500",
   },
@@ -36,26 +49,23 @@ const services = [
     icon: Hammer,
     title: "Demolition",
     description: "Safe and efficient demolition services",
-    items: ["Shed Removal", "Deck Demolition", "Interior Demo", "Fence Removal", "Pool Removal", "Structure Teardown"],
+    items: [
+      "Light Demolition (Sheds, Playsets, Decks, Fences)",
+      "Interior Demolition (Bathroom/Kitchen Tear-Outs)",
+      "Full Structure Tear-Downs (Small Houses, Garages, Mobile Homes)",
+    ],
     color: "bg-orange-500",
   },
-  {
-    icon: Truck,
-    title: "Specialty",
-    description: "Unique and challenging removals",
-    items: [
-      "Hot Tub Removal",
-      "Piano Moving",
-      "Safe Removal",
-      "Tire Disposal",
-      "Electronics Recycling",
-      "Hazmat Cleanup",
-    ],
-    color: "bg-purple-500",
-  },
-]
+];
+
 
 export default function Services() {
+   const scrollToContact = () => {
+    const element = document.querySelector("#contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section id="services" className="py-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-4">
@@ -97,10 +107,11 @@ export default function Services() {
                 </ul>
 
                 <Button
+                 onClick={scrollToContact}
                   className="w-full bg-gray-900 hover:bg-blue-600 text-white rounded-full transition-colors duration-300"
                   variant="default"
                 >
-                  Learn More
+                  Book Now
                 </Button>
               </Card>
             )
