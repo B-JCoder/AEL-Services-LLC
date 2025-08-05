@@ -41,7 +41,7 @@ export default function About() {
             </div>
 
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              <strong>A&L Services LLC</strong> is a family-owned business based in Palm Coast, Florida, committed to
+              <strong>AE&L Services LLC</strong> is a family-owned business based in Palm Coast, Florida, committed to
               fast, honest, and stress-free service. Whether it's cluttered homes or post-construction mess—we've got it
               covered. Our friendly team treats every job with care and professionalism, ensuring your space is clean
               and ready for what's next.
