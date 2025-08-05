@@ -53,7 +53,7 @@ export default function Navigation() {
           >
             <div className="w-14 h-14 md:w-16 md:h-16 bg-white rounded-full p-1.5 md:p-2 shadow-xl group-hover:scale-105 transition-transform duration-300 border-2 border-white/30">
               <Image
-                src="/images/hero.png"
+                src="/images/herobgremove.jpg"
                 alt="A&L Services LLC Logo"
                 width={64}
                 height={64}

@@ -8,7 +8,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About <span className="text-blue-600">A&L Services</span>
+              About <span className="text-blue-600">AE&L Services</span>
             </h2>
             <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full mb-8"></div>
           </div>
