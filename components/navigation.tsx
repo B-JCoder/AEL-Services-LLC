@@ -48,16 +48,17 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button onClick={() => scrollToSection("#home")} className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full p-1.5 md:p-2 shadow-xl group-hover:scale-105 transition-transform duration-300 border-2 border-white/30">
-              <Image
-                src="/images/hero.png"
-                alt="A&L Services LLC Logo"
-                width={56}
-                height={56}
-                className="w-full h-full object-contain rounded-full"
-                priority
-              />
-            </div>
+           <div className="w-14 h-14 md:w-16 md:h-16 bg-white rounded-full p-1.5 md:p-2 shadow-xl group-hover:scale-105 transition-transform duration-300 border-2 border-white/30">
+  <Image
+    src="/images/hero.png"
+    alt="A&L Services LLC Logo"
+    width={64}
+    height={64}
+    className="w-full h-full object-contain rounded-full"
+    priority
+  />
+</div>
+
             <div className="hidden sm:block">
               <h1
                 className={`text-lg md:text-xl font-bold transition-colors duration-300 drop-shadow-sm ${
