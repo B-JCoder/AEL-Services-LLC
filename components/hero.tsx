@@ -88,7 +88,7 @@ export default function Hero() {
                     Estate Cleanouts
                   </span>
                   <span className="bg-blue-600/60 px-3 py-2 rounded-full text-center col-span-2 font-medium">
-                    Estate Cleanouts
+                    Extreme hoard clean
                   </span>
                 </div>
               </div>

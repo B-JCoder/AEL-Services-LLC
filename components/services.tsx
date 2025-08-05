@@ -14,6 +14,7 @@ const services = [
       "Estate Cleanouts",
       "Garage Cleanouts",
       "Basement Clearing",
+      "Extreme hoard clean",
     ],
     color: "bg-blue-500",
   },
