@@ -95,12 +95,19 @@ export default function Hero() {
 
               {/* Mobile buttons */}
               <div className="lg:hidden mt-4 flex flex-col gap-3">
-                <Button
+               <Button
                   onClick={scrollToContact}
                   size="lg"
                   className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-base px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                >
+                > 
                   Get a Free Quote
+                </Button>
+               <Button
+                  onClick={scrollToContact}
+                  size="lg"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-base px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                > 
+                  Email Us
                 </Button>
                 <Button
                   asChild
