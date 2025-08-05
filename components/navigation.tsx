@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X, Phone } from "lucide-react"
-import Image from "next/image"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Phone } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -13,28 +13,28 @@ const navLinks = [
   { href: "#faq", label: "FAQ" },
   { href: "#testimonials", label: "Reviews" },
   { href: "#contact", label: "Contact" },
-]
+];
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+      setIsScrolled(window.scrollY > 50);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (href: string) => {
-    setIsOpen(false)
-    const element = document.querySelector(href)
+    setIsOpen(false);
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <nav
@@ -47,17 +47,20 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <button onClick={() => scrollToSection("#home")} className="flex items-center space-x-3 group">
-           <div className="w-14 h-14 md:w-16 md:h-16 bg-white rounded-full p-1.5 md:p-2 shadow-xl group-hover:scale-105 transition-transform duration-300 border-2 border-white/30">
-  <Image
-    src="/images/hero.png"
-    alt="A&L Services LLC Logo"
-    width={64}
-    height={64}
-    className="w-full h-full object-contain rounded-full"
-    priority
-  />
-</div>
+          <button
+            onClick={() => scrollToSection("#home")}
+            className="flex items-center space-x-3 group"
+          >
+            <div className="w-14 h-14 md:w-16 md:h-16 bg-white rounded-full p-1.5 md:p-2 shadow-xl group-hover:scale-105 transition-transform duration-300 border-2 border-white/30">
+              <Image
+                src="/images/hero.png"
+                alt="A&L Services LLC Logo"
+                width={64}
+                height={64}
+                className="w-full h-full object-contain rounded-full"
+                priority
+              />
+            </div>
 
             <div className="hidden sm:block">
               <h1
@@ -84,7 +87,9 @@ export default function Navigation() {
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
                 className={`font-medium transition-all duration-300 hover:scale-105 drop-shadow-sm ${
-                  isScrolled ? "text-gray-700 hover:text-blue-600" : "text-white hover:text-yellow-300"
+                  isScrolled
+                    ? "text-gray-700 hover:text-blue-600"
+                    : "text-white hover:text-yellow-300"
                 }`}
               >
                 {link.label}
@@ -114,11 +119,17 @@ export default function Navigation() {
               variant="ghost"
               size="sm"
               className={`lg:hidden transition-colors duration-300 ${
-                isScrolled ? "text-gray-900 hover:bg-gray-100" : "text-white hover:bg-white/20"
+                isScrolled
+                  ? "text-gray-900 hover:bg-gray-100"
+                  : "text-white hover:bg-white/20"
               }`}
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -141,7 +152,10 @@ export default function Navigation() {
                   asChild
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg"
                 >
-                  <a href="tel:+13866272171" className="flex items-center justify-center">
+                  <a
+                    href="tel:+13866272171"
+                    className="flex items-center justify-center"
+                  >
                     <Phone className="h-4 w-4 mr-2" />
                     Call (386) 627-2171
                   </a>
@@ -152,5 +166,5 @@ export default function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }
