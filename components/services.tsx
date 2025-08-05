@@ -82,51 +82,55 @@ export default function Services() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
           {services.map((service, index) => {
             const Icon = service.icon;
+            const isSpecialty = service.title === "Specialty";
             return (
               <Card
-                key={index}
-                className="bg-white border border-gray-200 rounded-3xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex justify-center mb-4">
-                    <div
-                      className={`${service.color} w-14 h-14 rounded-xl flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-300`}
-                    >
-                      <Icon className="h-7 w-7 text-white" />
-                    </div>
-                  </div>
+      key={index}
+      className={`bg-white border rounded-3xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between
+        ${isSpecialty ? "ring-2 ring-purple-400/50 shadow-lg scale-[1.02]" : ""}
+      `}
+    >
+      <div>
+        <div className="flex justify-center mb-4">
+          <div
+            className={`${service.color} w-14 h-14 rounded-xl flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-300`}
+          >
+            <Icon className="h-7 w-7 text-white" />
+          </div>
+        </div>
 
-                  <h3 className="text-xl font-semibold text-center text-gray-800 mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-center text-gray-500 mb-4">
-                    {service.description}
-                  </p>
+        <h3 className="text-xl font-semibold text-center text-gray-800 mb-2">
+          {service.title}
+        </h3>
+        <p className="text-sm text-center text-gray-500 mb-4">
+          {service.description}
+        </p>
 
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    {service.items.map((item, itemIndex) => (
-                      <li
-                        key={itemIndex}
-                        className="flex items-start space-x-2"
-                      >
-                        <span className="w-2 h-2 mt-1 bg-blue-500 rounded-full flex-shrink-0" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+        <ul className="space-y-2 text-sm text-gray-700">
+          {service.items.map((item, itemIndex) => (
+            <li
+              key={itemIndex}
+              className="flex items-start space-x-2"
+            >
+              <span className="w-2 h-2 mt-1 bg-blue-500 rounded-full flex-shrink-0" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-                <div className="mt-6">
-                  <Button
-                    onClick={scrollToContact}
-                    className="w-full bg-gray-900 hover:bg-blue-600 text-white rounded-full text-sm py-2.5 transition-colors"
-                  >
-                    Book Now
-                  </Button>
-                </div>
-              </Card>
+      <div className="mt-6">
+        <Button
+          onClick={scrollToContact}
+          className="w-full bg-gray-900 hover:bg-blue-600 text-white rounded-full text-sm py-2.5 transition-colors"
+        >
+          Book Now
+        </Button>
+      </div>
+    </Card>
             );
           })}
         </div>
